@@ -1,4 +1,4 @@
-def next_permutation(array):
+def next_permutation_lex(array):
     """Меняет array на следующую перестановку. Возвращает True/False."""
     n = len(array)
     
@@ -58,7 +58,7 @@ def generate_all_permutations_lex(items):
             count += 1
 
             # Генерируем следующую
-            if not next_permutation(array):
+            if not next_permutation_lex(array):
                 break
             
     print(f"Всего перестановок: {count}")
